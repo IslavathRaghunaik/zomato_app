@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search by Location - Zomato Inspired</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Restaurants</h1>
+    <nav>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="location.html">Search by Location</a>
+      </div>
+      <div class="search-bar">
+        <input type="text" id="searchQuery" placeholder="Search by name, food, cuisine...">
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="location-search">
+      <input type="number" id="lat" placeholder="Latitude" step="0.0001">
+      <input type="number" id="lon" placeholder="Longitude" step="0.0001">
+      <button id="submitLocation">Submit</button>
+    </div>
+    <div class="restaurant-list" id="restaurantList"></div>
+    <div class="pagination">
+      <button id="prevBtn" disabled>Previous</button>
+      <span id="pageInfo"></span>
+      <button id="nextBtn">Next</button>
+    </div>
+  </div>
+  <footer>
+    <p>© 2025 Restaurant App</p>
+  </footer>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
